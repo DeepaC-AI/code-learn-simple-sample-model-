@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeLearn Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo"><i class="fa-solid fa-code"></i> CodeLearn</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search topics (e.g. heading, color)...">
+        </div>
+        <nav class="nav-links">
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#" class="active"><i class="fa-solid fa-book-open"></i> Tutorials</a>
+            <a href="#">Examples</a>
+            <a href="#">Playground</a>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        
+        <aside class="sidebar">
+            <h3>HTML Tutorial</h3>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-circle-info"></i> Introduction</a></li>
+                <li><a href="#" class="active"><i class="fa-solid fa-layer-group"></i> HTML Elements</a></li>
+                <li><a href="#"><i class="fa-solid fa-font"></i> Text Formatting</a></li>
+                <li><a href="#"><i class="fa-solid fa-link"></i> Links & Images</a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i> Lists</a></li>
+                <li><a href="#"><i class="fa-solid fa-table"></i> Tables</a></li>
+                <li><a href="#"><i class="fa-solid fa-wpforms"></i> Forms</a></li>
+            </ul>
+            <div class="playground-box">
+                <h4>Practice & Learn</h4>
+                <p>Practice with live examples!</p>
+                <button>Try Playground</button>
+            </div>
+        </aside>
+
+        <section class="cards-section">
+            <h2>HTML Elements</h2>
+            <p class="subtitle">Click on any card to learn and view code examples.</p>
+            
+            <div class="cards-grid">
+                <div class="card active-card">
+                    <div class="card-icon icon-blue">H</div>
+                    <h3>HTML Heading</h3>
+                    <p>Learn how to create headings from h1 to h6.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon icon-green">T</div>
+                    <h3>HTML Paragraph</h3>
+                    <p>Learn how to add and style paragraphs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon icon-orange"><i class="fa-solid fa-link"></i></div>
+                    <h3>HTML Link</h3>
+                    <p>Learn how to create links in HTML.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon icon-purple"><i class="fa-solid fa-image"></i></div>
+                    <h3>HTML Image</h3>
+                    <p>Learn how to add images in pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details-section">
+            <div class="detail-header">
+                <span class="big-icon-h">H</span>
+                <div>
+                    <h2>HTML Heading</h2>
+                    <p>HTML headings are titles or subtitles that you want to display.</p>
+                </div>
+            </div>
+
+            <div class="preview-box">
+                <div class="box-header">Example Preview <button class="btn-run"><i class="fa-solid fa-play"></i> Run</button></div>
+                <div class="preview-content">
+                    <h1>This is Heading 1</h1>
+                    <h2>This is Heading 2</h2>
+                    <h3>This is Heading 3</h3>
+                </div>
+            </div>
+
+            <div class="code-box">
+                <div class="box-header">HTML Code <button class="btn-copy"><i class="fa-regular fa-copy"></i> Copy</button></div>
+                <pre><code>&lt;h1&gt;This is Heading 1&lt;/h1&gt;
+&lt;h2&gt;This is Heading 2&lt;/h2&gt;
+&lt;h3&gt;This is Heading 3&lt;/h3&gt;</code></pre>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

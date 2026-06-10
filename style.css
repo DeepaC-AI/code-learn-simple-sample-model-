@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.search-bar input {
+    width: 350px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.nav-links a {
+    color: #bfdbfe;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-links a.active, .nav-links a:hover {
+    color: white;
+}
+
+/* Main Layout Structure */
+.main-container {
+    display: grid;
+    grid-template-columns: 240px 1fr 1fr;
+    height: calc(100vh - 55px);
+}
+
+/* Sidebar Style */
+.sidebar {
+    background-color: white;
+    border-right: 1px solid #e2e8f0;
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 14px;
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px 12px;
+    color: #475569;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.sidebar ul li a.active, .sidebar ul li a:hover {
+    background-color: #e0f2fe;
+    color: #0369a1;
+    font-weight: bold;
+}
+
+.playground-box {
+    background-color: #f1f5f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.playground-box button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Middle Cards Section */
+.cards-section {
+    padding: 25px;
+    overflow-y: auto;
+    border-right: 1px solid #e2e8f0;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.active-card {
+    border: 2px solid #2563eb;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.icon-blue { background-color: #dbeafe; color: #2563eb; }
+.icon-green { background-color: #dcfce7; color: #16a34a; }
+.icon-orange { background-color: #ffedd5; color: #ea580c; }
+.icon-purple { background-color: #f3e8ff; color: #9333ea; }
+
+/* Right Details Section */
+.details-section {
+    padding: 25px;
+    overflow-y: auto;
+}
+
+.detail-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.big-icon-h {
+    background-color: #dbeafe;
+    color: #2563eb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Preview & Code Boxes */
+.preview-box, .code-box {
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.box-header {
+    background-color: #f8fafc;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.preview-content {
+    padding: 20px;
+}
+
+.code-box pre {
+    background-color: #0f172a;
+    color: #f8fafc;
+    padding: 15px;
+    overflow-x: auto;
+}
+
+button.btn-run, button.btn-copy {
+    background: white;
+    border: 1px solid #cbd5e1;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+button.btn-run:hover { background-color: #f1f5f9; }
